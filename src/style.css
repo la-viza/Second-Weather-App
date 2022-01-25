@@ -3,9 +3,10 @@ h1 {
   line-height: 60px;
   vertical-align: top;
 }
-.container {
+.container-sm {
   color: #202124;
   font-family: arial, sans-serif;
+  max-width: 50%;
 }
 .temperature {
   display: inline-block;
@@ -46,6 +47,7 @@ h1 {
 #search {
   margin: 25px 0;
   max-width: 50%;
+  border-radius: 4px;
 }
 
 .btn {
