@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <div class="container-sm">
+    <div class="container">
       <div class="weather-forecast">
 <div class="input-group mb-3">
  <input type="text" class="form-control" id="search" placeholder="Enter your city here..." autocomplete="off" />
@@ -23,29 +23,33 @@
   </div>
 </div>
         <h1>Toronto</h1>
-        <img
-          src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-        />
-        <span class="temperature">2</span>
-        <span class="units"> C°|F° </span>
-      </div>
-      <div class="details">
-        <span class="row">Humidity: 76%</span>
-        <span class="row">Wind: 11 km/h</span>
-      </div>
-      <div class="currently">
-        <span class="row">Monday 15:00</span>
-        <span class="row"> Cloudy</span>
-      </div>
-      
+        <ul> 
+        <li>Monday 15:00</li>
+        <li> Cloudy</li>
+     </ul>
+     <div class="row">
+         <div class="col-6"> 
+<img        
+src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"/>
+2°C | °F
+        </div>
+   <div class="col-md-6">
+    <ul>
+        <li>Humidity: 76%</li>
+        <li>Wind: 11 km/h</li>
+    </ul>
+   </div>
+  </div>
       <div class="future-forecast row">
         <div class="col"> Mon </br> 2° -1°</div>
            <div class="col">Tue </br> 2° -1°</div>
             <div class="col">Wed </br> 2° -1°</div>
            <div class="col">Thu </br> 2° -1°</div>
             <div class="col">Fri </br> 2° -1°</div>
-    
-      </div>
+      </div> 
+      <small> <a href="https://github.com/la-viza/Second-Weather-App">Open-source code</a> by Luiza Moshkin </small>
     </div>
+     
+    <script src="app.js/app.js"></script>
   </body>
 </html>
