@@ -20,7 +20,7 @@ function formatDate(timestamp) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  return `${day} ${hours}:${minutes}`;
+  return `${day}, ${hours}:${minutes}`;
 }
 
 function displayTemperature (response) {
@@ -31,6 +31,7 @@ let descriptionElement=document.querySelector("#description");
 let humidityElement=document.querySelector("#humidity");
 let windElement=document.querySelector("#wind");
 let dateElement = document.querySelector("#date");
+let iconElement = document.querySelector("#icon");
 
 
 
@@ -41,6 +42,9 @@ descriptionElement.innerHTML=response.data.weather[0].description;
 humidityElement.innerHTML=`Humidity: ${response.data.main.humidity}%`;
 windElement.innerHTML=`Wind: ${Math.round(response.data.wind.speed)} km/h`;
 dateElement.innerHTML= formatDate(response.data.dt * 1000);
+iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+iconElement.setAttribute("alt", response.data.weather[0].description);
+
 
 
 
