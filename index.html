@@ -19,24 +19,26 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <div class="input-group mb-3">
+          <form id="search-form" class="mb-3">
+              <div class="row">
+                  <div class="col-9">
             <input
-              type="text"
+              type="search"
               class="form-control"
-              id="search"
+              id="city-input"
               placeholder="Enter your city here..."
               autocomplete="off"
             />
-            <div class="input-group-append">
-              <button
-                class="btn search-btn btn btn-primary"
-                id="search-btn"
-                type="button"
-              >
-                Search
-              </button>
+                  </div>
+                  <div class="col-3">
+              <input
+                class="btn btn-primary w-95"
+                type="submit"
+                value="Search"
+              />  
             </div>
           </div>
+          </form>
           <div class="overview">
           <h1 id="city"></h1>
           <ul>
