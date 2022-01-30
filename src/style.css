@@ -79,15 +79,15 @@ li:first-letter {
   font-size: 16px;
   opacity: 0.5;
 }
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
 .weather-forecast-temperature-min {
   opacity: 0.5;
 }
 
 .weather-forecast-temperatures {
   font-size: 13px;
-}
-#search {
-  margin: auto;
-  max-width: 75%;
-  border-radius: 4px;
 }
